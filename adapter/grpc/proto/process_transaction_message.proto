@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = ".;pb";
+
+message ProcessRequest {
+    string id = 1;
+    string account_id = 2;
+    float amount = 3;
+}
+
+message ProcessResponse {
+    string id = 1;
+    string status = 2;
+    string error_message = 3;
+}
+
+service TransactionService {
+    rpc Process(ProcessRequest) returns (ProcessResponse) {};
+}

@@ -1,0 +1,1 @@
+CREATE TABLE transactions (id varchar(255) NOT NULL, account_id varchar(255) NOT NULL, amount float NOT NULL, status varchar(255) NOT NULL, error_message varchar(255) NOT NULL, created_at text NOT NULL, updated_at text NOT NULL, PRIMARY KEY (id));
